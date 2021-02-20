@@ -1,5 +1,9 @@
-import "./App.css";
 import React, { useState } from "react";
+import "./App.css";
+import OptionHeader from "./Components/OptionHeader.jsx";
+import AddAlarm from "./Components/AddAlarm.jsx";
+import WorldClock from "./Components/WorldClock.jsx";
+import Stopwatch from "./Components/Stopwatch.jsx";
 
 const App = () => {
   let time = new Date().toLocaleTimeString();
@@ -11,25 +15,15 @@ const App = () => {
   return (
     <>
       <container className="scoreContainer">
-        <h1>The time is:</h1>
+        <h1>You Are Here</h1>
         <div className="scoreBox">
           <h1 className="count">{count}</h1>
         </div>
         <br />
-        <div className="buttonDiv">
-          <button
-            className="btn btn-success mr-5"
-            onClick={() => setCount(count + 1)}
-          >
-            Increase
-          </button>
-          <button
-            className="btn btn-danger ml-5"
-            onClick={() => setCount(count - 1)}
-          >
-            Decrease
-          </button>
-        </div>
+        <OptionHeader />
+        <AddAlarm />
+        <WorldClock />
+        <Stopwatch />
       </container>
     </>
   );
