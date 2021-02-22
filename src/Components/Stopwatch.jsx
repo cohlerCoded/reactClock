@@ -1,7 +1,5 @@
 import React from "react";
-const styles = {
-  position: "relative",
-};
+const styles = {};
 export default function Stopwatch() {
   return (
     <div style={styles}>

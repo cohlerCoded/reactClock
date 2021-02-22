@@ -21,9 +21,11 @@ const App = () => {
         </div>
         <br />
         <OptionHeader />
-        <AddAlarm />
-        <WorldClock />
-        <Stopwatch />
+        <div className="buttonDiv">
+          <AddAlarm />
+          <WorldClock />
+          <Stopwatch />
+        </div>
       </container>
     </>
   );

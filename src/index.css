@@ -22,11 +22,15 @@ h1 {
 }
 
 .buttonDiv {
-  display: flex;
   position: absolute;
-  bottom: 50px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   left: 50%;
   transform: translateX(-50%);
+  height: 200px;
 }
 
 .count {
