@@ -5,7 +5,7 @@ const styles = {
 export default function WorldClock() {
   return (
     <div>
-      <button className="btn btn-danger" style={styles}>
+      <button className="btn btn-success" style={styles}>
         World Clock
       </button>
     </div>

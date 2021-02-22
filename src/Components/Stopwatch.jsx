@@ -5,7 +5,7 @@ const styles = {
 export default function Stopwatch() {
   return (
     <div style={styles}>
-      <button className="btn btn-danger">Stopwatch</button>
+      <button className="btn btn-success">Stopwatch</button>
     </div>
   );
 }
